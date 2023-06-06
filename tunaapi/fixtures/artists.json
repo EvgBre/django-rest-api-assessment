@@ -1,0 +1,29 @@
+[
+    {
+        "model": "tunaapi.artist",
+        "pk": 1,
+        "fields": {
+            "name": "Sleep Token",
+            "age": 5,
+            "bio": "An English prog-rock band that makes genre bending music."
+        }
+    },
+    {
+        "model": "tunaapi.artist",
+        "pk": 2,
+        "fields": {
+            "name": "The Killers",
+            "age": 22,
+            "bio": "An American rock band formed in Las Vegas."
+        }
+    },
+    {
+        "model": "tunaapi.artist",
+        "pk": 3,
+        "fields": {
+            "name": "Joy Division",
+            "age": 53,
+            "bio": "An Enlgish rock band formed in Salford."
+        }
+    }
+]

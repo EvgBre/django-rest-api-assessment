@@ -1,0 +1,16 @@
+[
+    {
+        "model": "tunaapi.artist",
+        "pk": 1,
+        "fields": {
+            "description": "Progressive Metal"
+        }
+    },
+    {
+        "model": "tunaapi.artist",
+        "pk": 2,
+        "fields": {
+            "description": "Rock"
+        }
+    }
+]
