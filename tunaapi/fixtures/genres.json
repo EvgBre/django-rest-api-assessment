@@ -1,0 +1,16 @@
+[
+    {
+        "model": "tunaapi.genre",
+        "pk": 1,
+        "fields": {
+            "description": "Progressive Metal"
+        }
+    },
+    {
+        "model": "tunaapi.genre",
+        "pk": 2,
+        "fields": {
+            "description": "Rock"
+        }
+    }
+]

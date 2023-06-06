@@ -1,0 +1,32 @@
+[
+    {
+        "model": "tunaapi.song",
+        "pk": 1,
+        "fields": {
+            "title": "The Summoning",
+            "artist_id": 1,
+            "album": "Take Me Back to Eden",
+            "length": 8
+        }
+    },
+    {
+        "model": "tunaapi.song",
+        "pk": 2,
+        "fields": {
+            "title": "Mr. Brightside",
+            "artist_id": 2,
+            "album": "Hot Fuss",
+            "length": 3
+        }
+    },
+    {
+        "model": "tunaapi.song",
+        "pk": 3,
+        "fields": {
+            "title": "Love Will Tear Us Apart",
+            "artist_id": 3,
+            "album": "Substance",
+            "length": 3
+        }
+    }
+]
