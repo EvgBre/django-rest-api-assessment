@@ -9,10 +9,13 @@ class SongView(ViewSet):
 
     def retrieve(self, request, pk):
         """Handle GET requests for single event"""
-        song = Song.objects.prefetch_related('genres').get(pk=pk)
         
-        serializer = SongSerializer(song)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        try:
+            song = Song.objects.get('genres').get(pk=pk) 
+            serializer = SongSerializer(song, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Artist.DoesNotExist:
+            return Response({'message': 'Song not found'}, status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
       songs = Song.objects.all()
