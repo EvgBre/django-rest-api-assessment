@@ -52,10 +52,10 @@ class ArtistView(ViewSet):
             Response -- Empty body with 204 status code
         """
 
-        artist = Artist.objects.get(pk=pk).first()
-        artist.name = request.data["name", artist.name]
-        artist.age = request.data["age", artist.age]
-        artist.bio = request.data["bio", artist.bio]
+        artist = Artist.objects.get(pk=pk)
+        artist.name = request.data["name"]
+        artist.age = request.data["age"]
+        artist.bio = request.data["bio"]
         artist.save()
         
         return Response(None, status=status.HTTP_204_NO_CONTENT)

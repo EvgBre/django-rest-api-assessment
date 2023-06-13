@@ -11,7 +11,7 @@ class SongView(ViewSet):
         """Handle GET requests for single event"""
         
         try:
-            song = Song.objects.get('genres').get(pk=pk) 
+            song = Song.objects.get(pk=pk)
             serializer = SongSerializer(song, context={'request': request})
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Artist.DoesNotExist:
